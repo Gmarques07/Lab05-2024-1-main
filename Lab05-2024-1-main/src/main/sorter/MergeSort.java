@@ -4,13 +4,18 @@ public class MergeSort implements Sorter {
 
     @Override
     public int[] sort(int[] values) {
+
         if (values == null || values.length <= 1) {
+
             return values;
     }
+
     return mergeSort(values);
 }
     private int[] mergeSort(int[] values) {
+
     if (values.length <= 1) {
+
         return values;
     }
     
@@ -30,7 +35,9 @@ public class MergeSort implements Sorter {
    
 
     public int[] merge(int[] left, int[] right) {
+
         int[] result = new int[left.length + right.length];
+        
         int i = 0, j = 0, k = 0;
         
         while (i < left.length && j < right.length) {
